@@ -1,0 +1,144 @@
+/* css ส่วนแสดงผล tag body จะมีผลทั้งหน้าเว็บ */
+body {
+    font-family: 'Kanit', sans-serif;
+    width: 1000px;
+    margin: 0 auto;
+    background-image: url(../images/tilebg.png);
+}
+/* css ส่วนแสดงผลส่วนหัวเว็บไซต์ */
+header {
+    /* ความสูงของส่วนหัวเว็บ */
+    height: 250px;
+    /* ดึงรูปภาพมาแสดงที่ส่วนหัวเว็บไซต์ */
+    background-image: url(../images/header.gif); 
+    animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+/* css ส่วนแสดงผลแถบปุ่มเมนู */
+nav {  
+    transition: all 2.0s ease;          
+    height: 40px;
+    background-color:rgb(0, 162, 255);
+    margin: 0 auto;
+    font-size: 20px;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+/* css ส่วนข้อมูลแถบด้านซ้ายที่เป็นชื่อเพื่อน */
+section{
+    width: 20%;
+    float: left;
+    background-color: #00c1ff;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+/* css แบบ class แสดงแถบสีข้อความแถบด้านซ้าย */
+.headtextsection{
+    width: 180px;
+    background-color: rgb(0, 162, 255);
+    color: white;
+    -webkit-animation: rainbow 4s steps(36) infinite;
+  }
+  
+  @-webkit-keyframes rainbow {
+     from { -webkit-filter:hue-rotate(10deg); }
+       to { -webkit-filter:hue-rotate(360deg); }
+  }
+  
+  @keyframes rainbow {
+   from {
+      -webkit-filter:hue-rotate(10deg);
+              filter:hue-rotate(10deg);
+      }
+    to {
+      -webkit-filter:hue-rotate(360deg);
+              filter:hue-rotate(360deg);
+      }
+  }
+/* css ส่วนแสดงผลเนื้อหาข้อมูลเพื่อน */
+article{
+    background-color: white;
+    float: left;
+    width: 80%;
+    height: 100%;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+/* css แบบ id ส่วนแสดงผลตาราง */
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+#t01 tr:nth-child(even) {
+    background-color: lightblue;
+}
+#t01 tr:nth-child(odd) {
+   background-color: lightblue;
+}
+#t01 th {
+    background-color: #1177a0;
+    color: white;
+}
+/* css การใส่เส้นกรอบรูปภาพเพื่อน */
+/*img {
+    border:5px solid rgb(255, 177, 223);
+    border-radius: 25px;
+}
+/* css ส่วนท้ายของหน้าเว็บเพจ */
+footer{
+    clear:both;
+    text-align: center;
+    height: 100px;
+    background-color: lightblue;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+/* css ส่วนการจัดข้อมูล tag div */
+div{
+    padding: 10px;
+    text-align: center;
+}
+/* css ส่วนแสดงผลข้อมูลประวัติเพื่อน */
+p{            
+    width: 85%;
+    font-size: 30px;
+    margin: 10px auto;
+    text-align: justify;
+    border:5px solid black;
+    padding: 10px;
+    overflow: auto;
+}
+
+.icon-bar {
+    width: 180px;
+    background-color: rgb(0, 162, 255);
+    animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 1.0s ease;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  
+  .icon-bar a:hover {
+    background-color: white;
+    color: rgb(0, 162, 255);
+    animation: pulse;
+    animation-duration: 1s;
+  }
+.hihead{
+    -webkit-animation: rainbow 4s steps(36) infinite;
+  }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์รวบรวมข้อมูลเพื่อนๆ 4/1</title>
+    <link rel="icon" href="images/megumegu.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- HTML5 Sematics Elements 
+        <article>
+        <aside>
+        <details>
+        <figcaption>
+        <figure>
+        <footer>
+        <header>
+        <main>
+        <mark>
+        <nav>
+        <section>
+        <summary>
+        <time>    
+    -->
+    <header>
+        <!-- Header -->
+    </header>
+    <nav>
+        <!-- Nav -->
+        <div class="marquee"><marquee behavior="ALTERNATE">✨😃ยินดีต้อนรับ😃✨</marquee></div>
+    </nav>
+    <section>
+        <!-- Section -->
+        <div class="headtextsection"><b>เครื่องคิดเลขกราฟ</b></div>
+        <iframe src="http://free.timeanddate.com/clock/i7ohp9s3/n28/fn6/fs16/fcfff/tc1177a0/pct/ftb/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4" frameborder="0" width="200" height="60" allowTransparency="true"></iframe>
+        <div class="icon-bar">
+            <a href="index.html" class="bin">หน้าหลัก</a>
+            <a href="1.html" class="b1">หาพื้นที่วงกลม</a>
+            <a href="2.html" class="b2">หาพื้นที่สี่เหลี่ยม</a>
+            <a href="3.html" class="b3">หาพื้นที่สี่เหลี่ยมด้านขนาน</a>
+            <a href="4.html" class="b4">หาพื้นที่สามเหลี่ยม</a>
+            <a href="5.html" class="b5">หาพื้นที่สี่เหลี่ยมจตุรัส</a>
+            
+        </div>
+    </section>
+    <article>
+        <!-- Article -->
+        <div class= "hihead"><h1 style="font-size: 200%;">หาพื้นที่สี่เหลี่ยมจตุรัส</h1></div>
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <p style="margin-left:8px;margin-bottom:4px;">พิมพ์ค่าในช่องเพื่อหาพื้นที่สี่เหลี่ยมจตุรัส</p>
+            <div class="w3-half w3-margin-top">
+              <label>ด้าน</label>
+              <input id="inputMPH" class="w3-input w3-border" type="number" placeholder="MPH" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+            </div>
+            <div class="w3-half w3-margin-top">
+              <label>พื้นที่</label>
+              <input id="inputKPH" class="w3-input w3-border" type="number" placeholder="KPH" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+            </div>
+        
+    </article>
+    <footer>
+        <!-- Footer -->
+        Modified โดย นายธนาวุฒิ ผาสุขมูล<br>
+            โรงเรียนอยุธยาวิทยาลัย<br>
+            (╯°□°)╯︵ ʞooqǝɔɐℲ
+    </footer>
+</body>
+</html>
+
+<script>
+    function speedConverter(source,valNum) {
+      valNum = parseFloat(valNum);
+      var inputMPH = document.getElementById("inputMPH");
+      var inputKPH = document.getElementById("inputKPH");
+      if (source=="inputMPH") {
+        inputKPH.value=(inputMPH.value*inputMPH.value).toFixed(2);
+      }
+    }
+    </script>
